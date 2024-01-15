@@ -18,6 +18,12 @@ app.get("/route0", (req, res) => {
   res.send("Route 0 is running ");
 });
 
+// Here we create a route for saving data into teh database
+app.post("/products", (req, res) => {
+  console.log("request body " + req.body);
+  res.send(req.body);
+});
+
 mongoose
   .connect("mongodb+srv://parth3_mongo:parthdb48@cluster1.sqvug29.mongodb.net/")
   .then(() => {
