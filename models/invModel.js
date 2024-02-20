@@ -3,7 +3,7 @@
 const mongoose = require("mongoose");
 
 // Schema is a part of a model and it contains info about the tables & columns
-const productSchema = mongoose.Schema(
+const invSchema = mongoose.Schema(
   {
     name: {
       type: String,
@@ -29,8 +29,8 @@ const productSchema = mongoose.Schema(
   }
 );
 
-const productModel = mongoose.model("products", productSchema);
+const invModel = mongoose.model("inventory", invSchema);
 // This is the model we made, to make a Collection in the mongoDB
 
 // we will export our Model (productModel) to other scripts
-module.exports = productModel;
+module.exports = invModel;
