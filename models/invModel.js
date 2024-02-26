@@ -1,4 +1,3 @@
-// A model is used to save Data in MongoDB
 
 const mongoose = require("mongoose");
 
@@ -29,7 +28,7 @@ const invSchema = mongoose.Schema(
   }
 );
 
-const invModel = mongoose.model("inventory", invSchema);
+const invModel = mongoose.model("invetory_collection", invSchema);
 // This is the model we made, to make a Collection in the mongoDB
 
 // we will export our Model (productModel) to other scripts

@@ -29,7 +29,7 @@ const productSchema = mongoose.Schema(
   }
 );
 
-const productModel = mongoose.model("products", productSchema);
+const productModel = mongoose.model("products_collection", productSchema);
 // This is the model we made, to make a Collection in the mongoDB
 
 // we will export our Model (productModel) to other scripts

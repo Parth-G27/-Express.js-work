@@ -54,7 +54,7 @@ app.post("/inventory", async(req,res) =>{
 })
 
 mongoose
-  .connect("mongodb+srv://parth3_mongo:parthdb48@cluster1.sqvug29.mongodb.net/Express_playground0")
+  .connect(process.env.MONGODB_CONNECTION_STRING)
   .then(() => {
     console.log("DataBase Connected.");
 
