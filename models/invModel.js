@@ -33,3 +33,6 @@ const invModel = mongoose.model("invetory_collection", invSchema);
 
 // we will export our Model (productModel) to other scripts
 module.exports = invModel;
+
+
+// LEFT 
