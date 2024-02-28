@@ -3,8 +3,12 @@
 const mongoose = require("mongoose");
 
 // Schema is a part of a model and it contains info about the tables & columns
-const productSchema = mongoose.Schema(
+const productSchema0 = mongoose.Schema(
   {
+    id: {
+      type: Number,
+      required: true,
+    },
     name: {
       type: String,
       required: [true, "Enter product name"],
@@ -18,9 +22,9 @@ const productSchema = mongoose.Schema(
       type: Number,
       required: true,
     },
-    image: {
-      type: String,
-      required: false,
+    discount: {
+      type: Number,
+      required: true,
     },
   },
   {
@@ -29,8 +33,8 @@ const productSchema = mongoose.Schema(
   }
 );
 
-const productModel = mongoose.model("products_collection", productSchema);
+const productModel1 = mongoose.model("products_collections", productSchema0);
 // This is the model we made, to make a Collection in the mongoDB
 
 // we will export our Model (productModel) to other scripts
-module.exports = productModel;
+module.exports = productModel1;
